@@ -1,3 +1,4 @@
+//  Copyright (C) 2017 Jane Ossai
 /* this service is responsible for passing the 'username' from the SearchComponent to the UserDisplayComponent*/
 import { Injectable } from '@angular/core';
 

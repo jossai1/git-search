@@ -1,3 +1,4 @@
+//  Copyright (C) 2017 Jane Ossai
 import { Component, OnInit } from '@angular/core';
 import { SharedService  } from  '../services/shared-service.service';
 import { Router } from "@angular/router";

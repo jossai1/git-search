@@ -1,3 +1,5 @@
+//  Copyright (C) 2017 Jane Ossai
+
 import { Component, OnInit } from '@angular/core';
 import { SharedService  } from  '../services/shared-service.service';
 import { GithubApiService  } from  '../services/github-api.service';
