@@ -1,0 +1,35 @@
+<div class="container">
+
+
+  <div>
+    <img class="avater" [src]="userData.avatar_url" alt="">
+    <span class="info">
+  <h3>@{{userData.login}}</h3>
+  <h4>{{userData.name}} </h4>
+  <h4> {{userData.followers}} FOLLOWERS (S)  |  {{userData.following}} FOLLOWING</h4>
+  <br>
+    {{userData.bio}}
+</span>
+  </div>
+
+  <hr>
+  <br>
+
+  <span> <h3> Follower(s) </h3> </span>
+  <br>
+  <div class="followers-list">
+
+
+    <div class="follower" *ngFor="let follower of userFollowerData.__zone_symbol__value">
+
+      <img class="avatar" [src]="follower.avatar_url" alt="">
+
+      <div class="username-overlay">
+        <p class="uname-tag">@{{follower.login}}</p>
+      </div>
+
+      <!-- <span class="follower-name">{{follower.login}}</span> -->
+
+    </div>
+  </div>
+</div>

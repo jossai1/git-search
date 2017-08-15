@@ -1,0 +1,66 @@
+img {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+}
+.container {
+  margin: 3%;
+}
+h3 {
+  display: inline;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+}
+
+.info {
+  margin-left: 3%;
+  font-weight: 400;
+  float: right;
+  margin-right: 15%;
+  margin-top: 10%;
+}
+/* relevant styles */
+.follower {
+  position: relative;
+  height: 250px;
+  width: 250px;
+}
+
+.followers-list {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+  margin:1%;
+}
+
+.followers-list img {
+  margin-bottom: 2%;
+}
+.uname-tag {
+  text-align: center;
+  /*margin: 35%;*/
+  line-height: 215px; /*center para in div to liking*/
+  font-size: 30px;
+}
+
+.username-overlay {
+  position: absolute;
+  border-radius: 50%;
+  top: 0;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /*width: 460px;*/
+  background: rgba(12, 34, 48, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.follower:hover .username-overlay {
+  visibility: visible;
+  opacity: 1;
+}
